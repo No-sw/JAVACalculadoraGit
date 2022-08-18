@@ -51,20 +51,11 @@ public class Calculadora extends javax.swing.JFrame {
        
     private void realizarOperacion(int tipoOperacion){
         switch(tipoOperacion){
-            case 0:
-                this.setTotal(this.getPrimerNumero() + this.getSegundoNumero());
-                break;
-            case 1:    
-                this.setTotal (this.getPrimerNumero() - this.getSegundoNumero());
-                break;
-            case 2:
-                this.setTotal (this.getPrimerNumero() * this.getSegundoNumero());
-                break;
-            case 3:
-                this.setTotal (this.getPrimerNumero() / this.getSegundoNumero());
-                break;
-            default:
-                System.out.println("Numero equivocado intente de nuevo");
+            case 0 -> this.setTotal(this.getPrimerNumero() + this.getSegundoNumero());
+            case 1 -> this.setTotal (this.getPrimerNumero() - this.getSegundoNumero());
+            case 2 -> this.setTotal (this.getPrimerNumero() * this.getSegundoNumero());
+            case 3 -> this.setTotal (this.getPrimerNumero() / this.getSegundoNumero());
+            default -> System.out.println("Numero equivocado intente de nuevo");
         }
     }
 
